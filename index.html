@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataVizor - Objevte sílu svých dat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            line-height: 1.6;
+            color: #fff;
+            background-color: #000;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .terminal {
+            position: relative;
+            height: 100vh;
+            padding: 2rem;
+            overflow: hidden;
+        }
+
+        .terminal::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('u9534644866_matrix_kode_screen_--ar_43_--v_6.1_ca8910a0-486e-4ec8-a93b-d8cd40531302_0.png');
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.15);
+            z-index: -1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .text-line {
+            margin-bottom: 1rem;
+            white-space: pre-wrap;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 1.2em;
+            background-color: #00ff00;
+            box-shadow: 0 0 10px #00ff00;
+            margin-left: 4px;
+            animation: blink 1s step-end infinite;
+            vertical-align: middle;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        .comment {
+            color: #6a9955;
+        }
+
+        .keyword {
+            color: #569cd6;
+        }
+
+        .string {
+            color: #ce9178;
+        }
+
+        .logo {
+            color: #4ec9b0;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="content">
+            <div class="text-line logo">class DataVizor {</div>
+            <div class="text-line">    constructor() {</div>
+            <div class="text-line string">        this.name = "DataVizor";</div>
+            <div class="text-line string">        this.mission = "Objevte sílu svých dat";</div>
+            <div class="text-line">    }</div>
+            <div class="text-line">    </div>
+            <div class="text-line comment">    // Data mají odpovědi. Pomůžeme vám je najít.</div>
+            <div class="text-line">    </div>
+            <div class="text-line keyword">    async initialize() {</div>
+            <div class="text-line string">        await this.transformData();</div>
+            <div class="text-line string">        await this.createVisualizations();</div>
+            <div class="text-line string">        await this.generateInsights();</div>
+            <div class="text-line">    }</div>
+            <div class="text-line">    </div>
+            <div class="text-line comment">    /* DataVizor je místo, kde se surová data mění</div>
+            <div class="text-line comment">       v přehledné vizualizace a smysluplné informace.</div>
+            <div class="text-line comment">       Připravujeme platformu, která vám umožní snadno</div>
+            <div class="text-line comment">       analyzovat, interpretovat a prezentovat data</div>
+            <div class="text-line comment">       tak, aby dávala jasný smysl. */</div>
+            <div class="text-line">}</div>
+            <div class="text-line"><span class="cursor"></span></div>
+        </div>
+    </div>
+</body>
+</html>
